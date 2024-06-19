@@ -1,78 +1,44 @@
-Table of Contents
-Containers	1
-YAML (Yet Another Markup Language)	1
-Docker	2
-Kubernetes (K8S)	6
-Helm charts:	8
+<h2>Docker </h2>
 
-Containers
-Terms:
-Container runtime, Container layers, Container registry (remote hub for all containers)
 
+Containers Terms: Container runtime, Container layers, Container registry (remote hub for all containers)
+
+<h3>Container</h3>
 A container is a unit of software/ deployment that contains code, runtime, system tools, system libraries.
-
 Container is, 
-•	compatible with any Linux distribution
-•	light-weight (order of KB)
-•	move faster by deploying smaller units.
-•	able to replicate easily.
-•	uses few resources.
-•	share the same OS kernel, thus quick to start (doesn’t have to boot) less. isolation and fit more.
-•	It stays alive, till the process inside is alive. Thus, ideal for short lived tasks.
+<ul>
+	<li>compatible with any Linux distribution</li>
+	<li>light-weight (order of KB)</li>
+	<li>move faster by deploying smaller units.</li>
+	<li>able to replicate easily.</li>
+	<li>uses few resources.</li>
+	<li>share the same OS kernel, thus quick to start (doesn’t have to boot) less. isolation and fit more.</li>
+	<li>It stays alive, till the process inside is alive. Thus, ideal for short lived tasks.</li>
+</ul>
 
 
-YAML (Yet Another Markup Language)
+<h3>Docker</h3>
 
-• often used configuration format.
-• provides data in human-readable format.
-• used for object serializable
-3.1 File initialization
-It starts with three dashes(-), indicates the start of the file.
----
-3.2 Data Types and Representation
-- Data is represented in key-value pairs.
-- key is always a string and the value is a scalar, can be of any data type.
-- Supports four Data types:
-1. String: declared with singel quotes(’) or double quotes(”) or no quotes.
-2. boolean: true or false
-3. floating-point number: eg. 3.1243
-4. array: each item is denoted by an indentation of two spaces.
-5. dictionary: collection of different data types.
-"myDict": {
-"item1": "string value",
-"item2": false,
-"item3": [
-"arr-item1": item1,
-"arr-item2": item2
-]
-}
-whitespace are used for formatting and it forbids tabs
-newline indicate next line i.e the end of a field.
-3.3 Comments
-Represented by a # symbol.
-They take up the whole line or placed at the end of the field
-
-Docker
-
--	Provides a container runtime (eg. Docker desktop) and command line tool to create and manage containers. 
+Provides a container runtime (eg. Docker desktop) and command line tool to create and manage containers. 
 Software containerization to reduce time and cost
 
 Faster in development and deployment
-1.	Consistency across all devices
-2.	Isolation: security and debugging
-3.	Version control
-4.	Scalability
-5.	Dev op integration
+<ol>
+	<li>Consistency across all devices</li>
+	<li>Isolation: security and debugging</li>
+	<li>Version control</li>
+	<li>Scalability</li>
+	<li>Dev op integration</li>
+</ol>
 
 
-Lightweight
+<h3>Images and containers</h3>
+<ol>
+	<li>Lightweight</li>
+	<li>Standalone</li>
+	<li>Executable package</li>
+</ol>
 
-
-Images and containers
-
-1.	Lightweight
-2.	Standalone
-3.	Executable package
 
 To run a software
 
@@ -84,11 +50,13 @@ Volumes (** need to practice more)
 3.	Registry (centralised storage and distribution of repository of images)
 
 Commands
-1.	EXPOSE
-2.	ARG
-3.	VOLUME
-4.	CMD
-5.	ENTRYPOINT (CMD)
+<ol>
+	<li>EXPOSE</li>
+	<li>ARG</li>
+	<li>VOLUME</li>
+	<li>CMD</li>
+	<li>ENTRYPOINT (CMD)</li>
+</ol>
 
 
 Docker file is the blueprint of the docker image. It defines the environment i.e steps to build a docker image, and this file is immutable. Helps the app to run as a container.
@@ -107,19 +75,30 @@ Two modes in docker:
 <ol>
     <li>Interactive </li>
     <li>Detached (containers that runs in background of your terminal) </li>
+</ol>
 
 Data persistence:
 <ul>
     <li>When a database container is deleted, the data will be erased. So, we need to map to a directory outside the container. </li>
     <li>docker run -v /<outside directory>:/<container directory> <container name> </li>
-
+</ul>
 
 
 Image name: the images you find in the container registry 
 
-	Description	command
-Info	get all info about the docker, version, images, containers count etc	docker info
-	docker version	docker version
+
+Info	get all info about the docker, version, images, containers count etc	
+
+
+
+```
+docker info
+```
+
+	docker version	
+ ```
+ docker version
+```
 Images		
 	List all the docker images	docker images
 	Remove a docker image (make sure no container is running from this image: stop and delete them)	docker rmi <image name>
