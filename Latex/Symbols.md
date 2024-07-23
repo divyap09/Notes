@@ -1,11 +1,12 @@
 <table>
   <tr>
-    <td> Intersection</td>
     <td> 
-      
-            ```
+      Intersection
+    </td>
+    <td> 
+        ```
             \cap
-            ```
+        ```
   
   </td>
   </tr>
