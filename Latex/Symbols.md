@@ -1,12 +1,2 @@
-<table>
-  <tr>
-    <td> 
-        Intersection
-    </td>
-    <td> 
-    </td>
-  </tr>
-</table>
-```
-  cap
-```
+## <center> Latex Symbols</center>
+Intersection: ``` \cap ``` <br/>
