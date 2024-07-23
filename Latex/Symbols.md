@@ -1,13 +1,14 @@
 <table>
   <tr>
     <td> 
-      Intersection
+        Intersection
     </td>
     <td> 
-        ```
-            \cap
-        ```
+          
   
   </td>
   </tr>
 </table>
+```
+  cap
+```
