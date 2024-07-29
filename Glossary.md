@@ -1,4 +1,6 @@
-
+<center>
+  <h1>Glossary</h1>
+<center>
 <a href='#A'> A</a> |
 <a href='#B'> B</a> | 
 <a href='#C'> C</a> | 
@@ -25,6 +27,7 @@
 <a href='#X'> X</a> | 
 <a href='#Y'> Y</a> | 
 <a href='#Z'> Z</a> | 
+</center>
 
 <section id='A'>
 <h2>A</h2>
