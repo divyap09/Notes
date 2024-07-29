@@ -1,5 +1,11 @@
 
-A | B | C | D | <a href='#E'> E</a> | 
+<a href='#A'> A </a> |
+<a href='#B'> B </a> | 
+<a href='#C'> C </a> | 
+<a href='#D'> D </a> | 
+<a href='#E'> E </a> | 
+<a href='#F'> F </a> |
+<a href='#G'> G </a> | 
 
 <section id='E'>
   
