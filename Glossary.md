@@ -40,6 +40,9 @@
 
 <section id='D'>
 <h2>D</h2>
+  <b>Denial-of-Service (DoS)</b>: when the 3rd-party attackers make the resource not reachable, by either re-directing the webpage, resource limiting or remove/drop the resource. <br/><br/>
+  
+  <b>Disseminate</b>: spread
 </section>
 
 <section id='E'>
