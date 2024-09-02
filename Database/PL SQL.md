@@ -4,8 +4,8 @@ It has both SQL statements and procedural statements. SQL statements are to acce
 
 Drawbacks of SQL:
 <ul>
-    <li>it doesn’t allow looping and control statements</li>
-    <li>doesn’t allow code reusability (need to write insert, update and many everytime).</li>
+    <li>it doesn't allow looping and control statements</li>
+    <li>doesn't allow code reusability (need to write insert, update and many everytime).</li>
     <li>cannot execute more than one statement at a time.</li>
 </ul>
     
@@ -163,7 +163,7 @@ For every database variable there must be a type-compatible variable declared in
 
 %type:
 
-When we don’t know the type of database variables, we use,
+When we don't know the type of database variables, we use,
 ```
 [variable] [tablename].[column name]%type;
 ```
@@ -180,7 +180,7 @@ These local variables should have values assigned to them or any default values,
 
 ### Anonymous block:
 
-Blocks which don’t have any name.
+Blocks which don't have any name.
 
 Unlike anonymous block, we can have blocks with names like procedures, function etc.
 
@@ -203,10 +203,14 @@ END procedure_name;
 
 MODE is usually IN (read only), OUT (write only) and IN OUT (read or write).
 
-    IN: caller supplies the value and we can’t change it in the program.
-    OUT: procedure sets the value and the calling program can read the value.
-    IN OUT: the variable which can be read and update, and available to the calling program.
-
+<ol>
+   <li> IN: caller supplies the value and we can't change it in the program.</li>
+   <li> OUT: procedure sets the value and the calling program can read the value.</li>
+   <li>IN OUT: the variable which can be read and update, and available to the calling program.</li>
+</ol>
+   
+   
+    
 Calling a procedure:
 ```
 procedure_name(parameters list);
@@ -270,7 +274,7 @@ System defined examples:
 
 User-defined exceptions:
 
-– the exception must be declared and raised explicitly using EITHER or RAISE.
+- the exception must be declared and raised explicitly using EITHER or RAISE.
 
 Syntax:
 ```
