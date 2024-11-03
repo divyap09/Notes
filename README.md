@@ -17,7 +17,8 @@ Self-prep notes
 ## OOPs concept
 <ul>
     <li><a href="https://divyap09.github.io/Notes/OOPs/Java%20OOPs" target="_blank" alt="Java OOPs">Java OOPs</a></li>
-    <li><a href="https://divyap09.github.io/Notes/OOPs/C++%20OOPs" target="_blank" alt="C++ OOPs">C++OOPs</a></li>
+    <li><a href="https://divyap09.github.io/Notes/OOPs/C%2B%2B%20OOPS" target="_blank" alt="C++ OOPs">C++OOPs</a></li>
+    <!-- https://divyap09.github.io/Notes/OOPs/C%2B%2B%20OOPS-->
     <li><a href="https://divyap09.github.io/Notes/OOPs/Python%20OOPs" target="_blank" alt="Python OOPs">Python OOPs</a></li>
 </ul>
 
