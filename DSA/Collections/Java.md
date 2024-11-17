@@ -16,6 +16,8 @@ use javap package.filename.class_name
 ```
 
 
+
+
 Collection are:
 <ul>
   <li>List</li>
@@ -62,6 +64,13 @@ Note:
 
 
 ## List Interface:
+
+Packages to import files:
+```
+import java.util.ArrayList;
+import java.util.List;;
+```
+
 - child interface of Collection
 - it stores ordered collection of objects
 - it allows duplicates
@@ -107,6 +116,12 @@ Note:
 
 ## Queue interface:
 
+packages to install:
+```
+import java.util.LinkedList;
+import java.util.Queue;
+```
+
 - implements First In First Out (FIFO)
 - order of the elements matter.
 - we can instantiate a queue using PriorityQueue, ArrayDequeue.
@@ -136,6 +151,13 @@ Note:
 
 ## Map interface:
 
+packages to be imported:
+```
+import java.util.HashMap;
+import java.util.Map;
+
+```
+
 - supports mapping of key-value pairs.
 - doesn't support duplicate keys
 - we perform operations based on the key
@@ -146,10 +168,16 @@ HashMap uses a technique called Hashing. Hashing is a technique of converting a 
 
 ## LinkedHashMap:
 
+Packages to be imported:
+```
+import java.util.LinkedHashMap;
+```
+
 same as HashMap but maintains the insertion order.
 
 ## SortedMap:
 
 it doesn't allow null keys or null values.
 
+## TreeMap
 TreeMap cannot have null keys but can have null values.
