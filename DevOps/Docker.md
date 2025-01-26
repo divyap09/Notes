@@ -86,75 +86,168 @@ Data persistence:
 
 Image name: the images you find in the container registry 
 
+<table>
+	<thead>
+		<tr>
+			<td></td>
+			<td>Description</td>
+			<td>Command</td>
+		</tr>
+	</thead>
+	<tr>
+		<td>Info</td>
+		<td>get all info about the docker, version, images, containers count etc</td>
+		<td><code>docker info</code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>docker version</td>
+		<td><code>docker version</code></td>
+	</tr>
+	<tr>
+		<td>Images</td>
+		<td>List all the docker images</td>
+		<td><code>docker images</code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Remove a docker image <br/> (make sure no container is running from this image: stop and delete them)</td>
+		<td><code>docker rmi &lt;image name&gt;</code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>To pull an image from registry</td>
+		<td><code>docker pull &lt;image name&gt; </code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>pull image with a tag</td>
+		<td><code>docker pull &lt;image name&gt;:&lt;version&gt;</code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>get image info</td>
+		<td><code>docker image inspect &lt;image name&gt;</code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>remove all images that are not in use by any container</td>
+		<td><code>docker system prune -a</td>
+	</tr>
+ 	<tr>
+		<td>Containers</td>
+		<td>List all running containers</td>
+		<td><code>docker ps -a</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>get list of all container ids	</td>
+		<td><code>docker ps -a -q</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>To run a container from an image</td>
+		<td><code>docker run &lt;container name&gt; &lt;image name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>to publish a port for a container (--publish or -p)</td>
+		<td><code>docker run --publish [or -p] &lt;host port&gt;: &lt;container_port&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>to run an interactive cmd (it attaches the container terminal)</td>
+		<td><code>docker run -it &lt;application&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Start a container</td>
+		<td><code>docker start &lt;container name/id&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Stop a running container</td>
+		<td><code>docker stop &lt;container name/id&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Kill a container</td>
+		<td><code>docker kill &lt;container&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Remove a container permanently (only stopped ones)</td>
+		<td><code>docker rm &lt;container name/id&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>To remove a running container</td>
+		<td><code>docker rm -f &lt;container name/id&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>inspect container env variables</td>
+		<td><code>docker inspect &lt;container name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>set max memory for a container</td>
+		<td><code>docker run -–memory=”256m” &lt;container name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>set max CPU for the container</td>
+		<td><code>docker run –cpus=”.5” &lt;container&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>attach to the container</td>
+		<td><code>docker container exec -it &lt;container name&gt; &lt;program name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td>Volumes	</td>
+		<td>List all volumes</td>
+		<td><code>docker volume ls</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Remove a volume</td>
+		<td><code>docker volume rm &lt;volume name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td>Networking</td>
+		<td>Run a container with port mapping</td>
+		<td><code>docker run --name &lt;container name&gt; -p &lt;host port&gt;:&lt;container port&gt; &lt;image name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>List all networks</td>
+		<td><code>docker network ls</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Inspect details of the network</td>
+		<td><code>docker network inspect &lt;network name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Define a user-defined bridge</td>
+		<td><code>docker network create <new network name></code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>Connect a container to a network</td>
+		<td><code>docker network connect &lt;network name&gt; &lt;container name&gt;</code></td>
+	</tr>
+ 	<tr>
+		<td></td>
+		<td>disconnect a container to a network</td>
+		<td><code>docker network disconnect &lt;network name&gt; &lt;container name&gt;</code></td>
+	</tr>
+</table>
 
-Info	get all info about the docker, version, images, containers count etc	
 
 
-
-```
-docker info
-```
-
-	docker version	
- ```
- docker version
-```
-Images		
-	List all the docker images	docker images
-	Remove a docker image (make sure no container is running from this image: stop and delete them)	docker rmi <image name>
-	To pull an image from registry	docker pull <image name>
-	pull image with a tag	docker pull <image name>:<version>
-	get image info	docker image inspect <image name>
-	remove all images that are not in use by any container	docker system prune -a
-Containers		
-	List all running containers	docker ps -a
-	get list of all container ids	docker ps -a -q
-	To run a container from an image	docker run <container name> <image name>
-	to publish a port for a container (--publish or -p)	docker run --publish [or -p] <host port>: <container_port>
-	to run an interactive cmd (it attaches the container terminal)	docker run -it <application>
-	Start a container	docker start <container name/id>
-	Stop a running container	docker stop <container name/id>
-	Kill a container	docker kill <container>
-	Remove a container permanently (only stopped ones)	docker rm <container name/id>
-	To remove a running container	docker rm -f <container name/id>
-
-	inspect container env variables	docker inspect <container name>
-	set max memory for a container	docker run -–memory=”256m” <container name>
-	set max CPU for the container	docker run –cpus=”.5” <container>
-	attach to the container	docker container exec -it <container name> <program name>
-Volumes		
-	List all volumes	docker volume ls
-	Remove a volume	docker volume rm <volume name>
-Networking		
-	Run a container with port mapping	docker run --name <container name> -p <host port>:<container port> <image name>
-	List all networks	docker network ls	
-	Inspect details of the network	docker network inspect <network name>
-	Define a user-defined bridge	docker network create <new network name>
-	Connect a container to a network	docker network connect <network name> <container name>
-	disconnect a container to a network	docker network disconnect <network name> <container name>
-
-
-
-docker kill "$(docker ps -q --filter name=ccaas)"
-docker rm -f
-docker image rm -f
-docker images -aq –filter reference=’give ref*’
- 
-docker run –rm (-v) hyperledger/fabric-tools
-docker -f compose/
- 
-
-
-docker exec cli ./scripts/setAnchorPeer.sh $ORG $CHANNEL_NAME
-
-docker build -f $CC_SRC_PATH/Dockerfile -t ${CC_NAME}_ccaas_image:latest --build-arg CC_SERVER_PORT=9999 $CC_SRC_PATH >&log.txt
-
-
-docker run --rm -d --name peer0org1_${CC_NAME}_ccaas  \
-                  --network fabric_test \
-                  -e CHAINCODE_SERVER_ADDRESS=0.0.0.0:${CCAAS_SERVER_PORT} \
-                  -e CHAINCODE_ID=$PACKAGE_ID -e CORE_CHAINCODE_ID_NAME=$PACKAGE_ID \
-                    ${CC_NAME}_ccaas_image:latest
 
 
 Docker exec command: to execute the command in a container OS.
