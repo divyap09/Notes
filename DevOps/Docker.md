@@ -188,6 +188,12 @@ Image name: the images you find in the container registry 
 		<td></td>
 		<td>To check logs of a container</td>
 		<td><code>docker logs -f &lt;container name/id&gt; </code></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Run a container with port mapping</td>
+		<td><code>docker run --name &lt;container name&gt; -p &lt;host port&gt;:&lt;container port&gt; &lt;image name&gt;</code></td>
+	</tr>
  	<tr>
 		<td></td>
 		<td>inspect container env variables</td>
@@ -225,11 +231,6 @@ Image name: the images you find in the container registry 
 	</tr>
  	<tr>
 		<td>Networking</td>
-		<td>Run a container with port mapping</td>
-		<td><code>docker run --name &lt;container name&gt; -p &lt;host port&gt;:&lt;container port&gt; &lt;image name&gt;</code></td>
-	</tr>
- 	<tr>
-		<td></td>
 		<td>List all networks</td>
 		<td><code>docker network ls</code></td>
 	</tr>
