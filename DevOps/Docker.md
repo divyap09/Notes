@@ -184,6 +184,10 @@ Image name: the images you find in the container registry 
 		<td>To remove a running container</td>
 		<td><code>docker rm -f &lt;container name/id&gt;</code></td>
 	</tr>
+	<tr>
+		<td></td>
+		<td>To check logs of a container</td>
+		<td><code>docker logs -f &lt;container name/id&gt; </code></td>
  	<tr>
 		<td></td>
 		<td>inspect container env variables</td>
@@ -209,6 +213,11 @@ Image name: the images you find in the container registry 
 		<td>List all volumes</td>
 		<td><code>docker volume ls</code></td>
 	</tr>
+ 	<tr>
+		<td></td>
+		<td>Create a volume</td>
+		<td><code>docker volume create &lt;volume name&gt;</code></td>
+	</tr>	
  	<tr>
 		<td></td>
 		<td>Remove a volume</td>
