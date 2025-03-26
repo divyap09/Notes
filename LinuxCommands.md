@@ -22,4 +22,8 @@ TMUX
     <td>rename a session</td>
     <td><code>tmux rename-session -t &lt; old-session-name &gt; &lt; session-name &gt; </code></td>
   </tr>
+  <tr>
+    <td>detach from a session</td>
+    <td><code>ctrl+B D</code></td>
+  </tr>
 </table>
